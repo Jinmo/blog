@@ -17,3 +17,9 @@ h1 {
 li[todo] {
 	color: #888;
 }
+
+li[done]::before {
+	content: "(Done)";
+	padding-right: 1em;
+	color: #888;
+}
