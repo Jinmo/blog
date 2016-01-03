@@ -1,5 +1,5 @@
 body {
-	font-family: Georgia;
+	font-family: Bitter;
 	line-height: 180%;
 }
 
@@ -22,4 +22,8 @@ li[done]::before {
 	content: "(Done)";
 	padding-right: 1em;
 	color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Bitter;
 }
