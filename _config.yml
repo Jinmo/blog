@@ -8,7 +8,7 @@ logo: false
 paginate: 15
 baseurl: /
 domain_name: 'https://jinmo.github.io'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-86851915-1'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
