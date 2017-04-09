@@ -1,0 +1,29 @@
+body {
+	font-family: Bitter;
+	line-height: 180%;
+}
+
+#wrap {
+	width: 780px;
+	margin: 0 auto;
+}
+
+h1 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.5em;
+	font-weight: normal;
+}
+
+li[todo] {
+	color: #888;
+}
+
+li[done]::before {
+	content: "(Done)";
+	padding-right: 1em;
+	color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Bitter;
+}

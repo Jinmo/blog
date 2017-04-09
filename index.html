@@ -2,7 +2,6 @@
 layout: default
 title: Home
 cover: false
-about: 'about.html'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -18,7 +17,7 @@ about: 'about.html'
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
-                {% if site.description %} {{ site.description }}. {% endif %}
+                {% if site.description %} {{ site.description }} {% endif %}
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
             </h2>
         </div>
@@ -45,7 +44,7 @@ about: 'about.html'
         </section>
         <footer class="post-meta">
             {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
+                <img class="author-thumb" src="//www.gravatar.com/avatar/1bfe6e1950b24808e54de412c0542ffe?s=250&d=mm&r=x" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
             {% if post.categories.size > 0 %} 
