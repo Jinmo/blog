@@ -3,14 +3,27 @@ description: Thoughts, stories and ideas.
 meta_description: "Thoughts, stories, and ideas."
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
+navigation: true
 logo: false
 paginate: 15
-baseurl: /
+baseurl: 
 domain_name: 'https://jinmo.github.io'
 google_analytics: 'UA-86851915-1'
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, rouge]
 
 # Details for the RSS feed generator
 url:            'https://jinmo.github.io'
 author:         'Yonghwi Jin'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author

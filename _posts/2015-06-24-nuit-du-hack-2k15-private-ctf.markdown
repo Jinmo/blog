@@ -2,6 +2,7 @@
 layout: post
 title: Nuit du hack 2k15 private CTF 후기
 date: 2015-06-24 11:07:00.000000000 +09:00
+author: jinmo
 ---
 음.. 일단 제목을 정정하겠습니다.
 private CTF보다는 semi-private CTF가 낫겠네요. 운영상 상당히 아쉬운점이었습니다. 뒤에서 다시 언급하겠습니다.

@@ -1,76 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    {%comment%} Document Settings {%endcomment%}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>{{ site.name }}</title>
-    <meta name="description" content="{{ site.meta_description}}" />
+    {%comment%} Page Meta {%endcomment%}
+    <title>{{site.name}}</title>
+    <meta name="description" content="{{site.meta_description}}" />
 
+    {%comment%} Mobile Meta {%endcomment%}
     <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    {%comment%} Brand icon {%endcomment%}
+    <link rel="shortcut icon" href="{{"assets/favicon.ico" | relative_url }}">
+
+    {%comment%} Styles'n'Scripts {%endcomment%}
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-    <!-- Customisation  -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-
-<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
-<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{"assets/css/screen.css" | relative_url}}" />
 
 
-<style>
-    .gist-file .gist-data {
-        max-height: 300px;
-    }
-
-    .gist-file .gist-data tr {
-        border-top: none !important;
-    }
-    
-    body, h1, h2, h3, h4, h5, h6 {
-        font-family: 'Spoqa Han Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-        line-height: 180%;
-    }
-    @media (min-width: 723px) {
-        html {
-            zoom: 1.1;
-        }
-    }
-</style>
-
+    {%comment%} Ghost outputs important style and meta data with this tag {%endcomment%}
+    {%include head.html%}
 </head>
-<body class="{% if layout.post_class %}{{layout.post_class}}{% else %}home-template{% endif %}">
+<body class="{{layout.body_class}} nav-closed">
 
-    {{ content }}
-    <footer class="site-footer clearfix">
-      <section class="copyright">
-        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; 
-              {{"now" | date: "%Y"}} &bull; All rights reserved.
-      </section>
-      <section class="poweredby">Made with Jekyll using 
-        <a href="http://github.com/rosario/kasper">Kasper theme</a>
-      </section>
-    </footer>
-    
-    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="/assets/js/index.js"></script>
+    {%comment%} The blog navigation links {%endcomment%}
+    {{navigation}}
 
-    <!-- Google Analytics Tracking code -->
-    <script type="text/javascript">
+    <div class="site-wrapper">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-      _gaq.push(['_trackPageview']);
+        {%comment%} All the main content gets inserted here, index.hbs, post.hbs, etc {%endcomment%}
+        {{content}}
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        {%comment%} The tiny footer at the very bottom {%endcomment%}
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="{{site.url}}">{{site.title}}</a> &copy; {{"now" | date: "%Y"}}</section>
+            <section class="poweredby">Casper theme by <a href="https://ghost.org">Ghost</a>, adopted to Jekyll by <a href="https://github.com/Jinmo/Jekyll-Capser">Jinmo</a></section>
+        </footer>
 
-    </script>   
+    </div>
+
+    {%comment%} jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection {%endcomment%}
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    {%comment%} Ghost outputs important scripts and data with this tag {%endcomment%}
+    {%include foot.html%}
+    {%comment%} Fitvids makes video embeds responsive and awesome {%endcomment%}
+    <script type="text/javascript" src="{{"assets/js/jquery.fitvids.js" | relative_url }}"></script>
+    {%comment%} The main JavaScript file for Casper {%endcomment%}
+    <script type="text/javascript" src="{{"assets/js/index.js" | relative_url }}"></script>
+
 </body>
 </html>
