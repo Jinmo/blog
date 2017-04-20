@@ -49,7 +49,7 @@ post_class: post-template
             {{content}}
         </section>
 
-        {% if page.archive %}
+        {% if layout.archive %}
         <section class="archive">
             <h5>Archive</h5>
             <ul>
@@ -81,7 +81,7 @@ post_class: post-template
             {% include share.html %}
 
             <!-- Disqus comments -->
-            {% if page.disqus %}
+            {% if layout.disqus %}
                 {% include disqus.html %}
             {% endif %}
 
