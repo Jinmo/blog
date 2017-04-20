@@ -119,7 +119,7 @@ Web1 문제는.. 패치할 게 많아서 git으로 관리했습니다. 그리고
 
 여러 문제의 익스플로잇을 돌리다보니 순위가 1등으로 올라가있었고, 10000점을 거쳐서 22000점까지 갔습니다. 오예!
 
-![](/content/images/2017/02/xctfscreen.small.png)
+![](/assets/xctfscreen.small.png)
 
 ## 후기
 
