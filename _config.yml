@@ -20,6 +20,7 @@ collections:
   authors:
     output: true
     permalink: /authors/:path/
+  navigations:
 
 defaults:
   - scope:
