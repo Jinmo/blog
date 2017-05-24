@@ -29,5 +29,4 @@ defaults:
     values:
       layout: author
 
-sass:
-  sass_dir: /
+theme: unf
