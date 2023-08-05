@@ -7,7 +7,7 @@ highlighter: rouge
 navigation: true
 logo: false
 paginate: 15
-baseurl: 
+baseurl: /blog/
 domain_name: 'https://jinmo.github.io'
 google_analytics: 'UA-86851915-1'
 gems: [jekyll-paginate, rouge]
