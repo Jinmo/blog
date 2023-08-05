@@ -93,7 +93,7 @@ body_class: post-template
 {%comment%} Links to Previous/Next posts {%endcomment%}
 <aside class="read-next">
     {%if page.next%}
-    <a class="read-next-story {%if page.next.cover%}" style="background-image: url({{page.next.cover}}){%else%}no-cover{%endif%}" href="{{page.next.url}}">
+    <a class="read-next-story {%if page.next.cover%}" style="background-image: url({{page.next.cover}}){%else%}no-cover{%endif%}" href="{{site.baseurl}}{{page.next.url}}">
         <section class="post">
             <h2>{{page.next.title}}</h2>
             <p>{{page.next.excerpt | strip_html | truncatewords:19}}&hellip;</p>
@@ -101,7 +101,7 @@ body_class: post-template
     </a>
     {%endif%}
     {%if page.previous%}
-    <a class="read-next-story prev {%if page.previous.cover%}" style="background-image: url({{page.previous.cover}}){%else%}no-cover{%endif%}" href="{{page.previous.url}}">
+    <a class="read-next-story prev {%if page.previous.cover%}" style="background-image: url({{page.previous.cover}}){%else%}no-cover{%endif%}" href="{{site.baseurl}}{{page.previous.url}}">
         <section class="post">
             <h2>{{page.previous.title}}</h2>
             <p>{{page.previous.excerpt | strip_html | truncatewords:19}}&hellip;</p>
