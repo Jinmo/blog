@@ -11,7 +11,7 @@ author: jinmo
 
 ipTIME 공유기를 쓰신다면, 192.168.0.1 에 들어가보세요.
 
-![iptime admin](/assets/images/iptime-admin.png)
+![iptime admin]({{ site.baseurl }}/assets/images/iptime-admin.png)
 
 이런 화면이 뜹니다. 만약 각 입력값이 C언어로 짠 프로그램에서 처리가 되고, 해당 프로그램의 소스코드가 아래와 같으면 어떨까요?
 
@@ -41,11 +41,11 @@ void get_value(char *dst, char *name, size_t size) {
 
 바람직한 변화죠. 하지만 2018년에 또 다른 로그인 화면이 생깁니다. 바로 **모바일 전용 로그인** 화면입니다.
 
-![iptime mobile login](/assets/images/iptime-mlogin.png)
+![iptime mobile login]({{ site.baseurl }}/assets/images/iptime-mlogin.png)
 
 모바일 로그인 화면에서는 로그인 실패 시 ID정보를 다시 보여주기 위해 GET 인자로 전달하는데, Base64 인코딩을 해서 전송합니다. `info`라는 GET 인자로 전송하죠. 요렇게요.
 
-![iptime-mobile](/assets/images/iptime-mlogin2.png)
+![iptime-mobile]({{ site.baseurl }}/assets/images/iptime-mlogin2.png)
 
 m_login.cgi는 ELF파일인데요, info= 뒤의 base64 문자열을 아래와 같이 풀어 처리해줍니다.
 
