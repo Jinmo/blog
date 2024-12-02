@@ -10,7 +10,7 @@ paginate: 15
 baseurl: /blog
 domain_name: 'https://jinmo.github.io'
 google_analytics: 'UA-86851915-1'
-gems: [jekyll-paginate, rouge]
+plugins: [jekyll-paginate, rouge]
 
 # Details for the RSS feed generator
 url:            'https://jinmo.github.io'
