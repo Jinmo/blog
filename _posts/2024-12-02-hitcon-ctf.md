@@ -13,7 +13,7 @@ tags:
 
 [HITCON CTF](https://ctf.hitcon.org/)는 매년 대만의 HITCON (Hack in Tawian Conference) 컨퍼런스에서 주최하는 CTF 해킹대회입니다.
 저는 2015년부터 4년정도 참여했었고, 팀원들 덕분에 좋은 성적을 낼 수 있었습니다. 3연속 1등이라니, 세상에.
-다시 말씀드리지만 팀원들에게 많이 배웠었습니다. Cykorkinesis 팀으로 출전했었는데, lokihardt, hellosonic, setuid0 그리고 제가 있던 팀입니다.
+다시 말씀드리지만 팀원들에게 많이 배웠었습니다. Cykorkinesis 팀으로 출전했었는데, lokihardt, hellsonic, setuid0 그리고 제가 있던 팀입니다.
 
 ![Capture the food]({{ site.baseurl }}/assets/images/hitcon-food.jpg){: width="500" }
 
